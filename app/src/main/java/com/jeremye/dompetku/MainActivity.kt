@@ -1,5 +1,6 @@
 package com.jeremye.dompetku
 
+import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -32,5 +33,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         sp = getSharedPreferences("data_SP", MODE_PRIVATE)
+
+        binding.btnMenuKategori.setOnClickListener {
+            startActivity(Intent(this, KategoriActivity::class.java))
+        }
+
+        binding.btnMenuIncome.setOnClickListener {
+        }
+
+        binding.btnMenuExpense.setOnClickListener {
+        }
     }
 }
