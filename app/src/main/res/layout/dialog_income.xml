@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kategori Pemasukan:"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spKategoriIncome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/etNominalIncome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Nominal (contoh: 500000)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etTanggalIncome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Tanggal (dd/MM/yyyy)"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/etKeteranganIncome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Keterangan (opsional)"
+        android:inputType="textCapSentences" />
+
+</LinearLayout>

@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnMenuIncome.setOnClickListener {
+            startActivity(Intent(this, IncomeActivity::class.java))
         }
 
         binding.btnMenuExpense.setOnClickListener {
